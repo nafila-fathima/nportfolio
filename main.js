@@ -64,3 +64,14 @@ ScrollReveal().reveal(".portfolio__card", {
   duration: 1000,
   interval: 500,
 });
+<button onclick="downloadCV()">Download CV</button>
+
+function downloadCV() {
+    const link = document.createElement("a");
+    link.href = "assets/nafila resume.pdf";  // Adjust path if needed
+    link.download = "Nafila_Fathima_CV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+};
+

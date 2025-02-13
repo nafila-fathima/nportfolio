@@ -68,7 +68,7 @@ ScrollReveal().reveal(".portfolio__card", {
 
 function downloadCV() {
     const link = document.createElement("a");
-    link.href = "assets/nafila resume.pdf";  // Adjust path if needed
+    link.href = "cv/nafila resume.pdf";  
     link.download = "Nafila_Fathima_CV.pdf";
     document.body.appendChild(link);
     link.click();
